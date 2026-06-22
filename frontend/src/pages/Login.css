@@ -1,0 +1,129 @@
+/* Full page background */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("https://images.unsplash.com/photo-1605640840605-14ac1855827b?auto=format&fit=crop&w=1600&q=80");
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* =========================
+   Login Card
+========================= */
+
+.login-container {
+  width: 420px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  border-radius: 20px;
+
+  padding: 40px;
+
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+
+  text-align: center;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.login-container h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   Inputs & Button
+========================= */
+
+.login-container input,
+.login-container button {
+  width: 100%;
+  height: 52px;
+
+  box-sizing: border-box;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+}
+
+/* Inputs */
+
+.login-container input {
+  padding: 0 16px;
+  margin-bottom: 18px;
+
+  border: none;
+  outline: none;
+
+  background: rgba(255,255,255,0.18);
+  color: white;
+
+  transition: 0.3s;
+}
+
+.login-container input::placeholder {
+  color: #d1d5db;
+}
+
+.login-container input:focus {
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 0 10px rgba(14,165,233,0.45);
+}
+
+/* Login Button */
+
+.login-container button {
+  border: none;
+
+  background: #0ea5e9;
+  color: white;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background: #0284c7;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Register Link
+========================= */
+
+.register-link {
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+}
+
+.register-link span {
+  color: #38bdf8;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-link span:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,104 @@
+/* =========================
+   ADMIN CONTENT UI (UNIFIED)
+========================= */
+
+/* FORM */
+.form-box {
+  max-width: 600px;
+  margin-bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-box input,
+.form-box textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+
+  background: #38bdf8;
+  color: white;
+}
+
+/* LIST GRID */
+.list-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+/* CARD (COMMON FOR ALL MODULES) */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+
+  color: white;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+/* EMPTY STATE */
+.empty {
+  color: #94a3b8;
+  text-align: center;
+  padding: 20px;
+}
+
+/* STATUS BADGE */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.status.pending {
+  background: #f59e0b;
+  color: black;
+}
+
+.status.resolved {
+  background: #22c55e;
+  color: black;
+}
+
+.status.inprogress {
+  background: #3b82f6;
+  color: white;
+}
+
+/* TAG */
+.tag {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}

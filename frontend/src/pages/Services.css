@@ -1,0 +1,178 @@
+/* =========================
+   SERVICE PAGE WRAPPER
+========================= */
+.service-page {
+  padding: 110px 20px 60px;
+  min-height: 100vh;
+
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   TITLE WRAPPER
+========================= */
+.service-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  margin-bottom: 25px;
+}
+
+/* =========================
+   EMOJI ICON (FIXED)
+========================= */
+.service-icon {
+  font-size: 38px;
+
+  /* IMPORTANT: prevents gradient / clipping issues */
+  background: none !important;
+  color: initial !important;
+  -webkit-text-fill-color: initial !important;
+  background-clip: unset !important;
+  -webkit-background-clip: unset !important;
+}
+
+/* =========================
+   GRADIENT TEXT ONLY
+========================= */
+.service-text {
+  font-size: 32px;
+  font-weight: 600;
+
+  background: linear-gradient(90deg, #38bdf8, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+.service-form {
+  width: 100%;
+  max-width: 520px;
+
+  padding: 30px;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.service-form:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   INPUTS
+========================= */
+.service-form input,
+.service-form select,
+.service-form textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+
+  color: white;
+  outline: none;
+
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* Placeholder */
+.service-form input::placeholder,
+.service-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Focus */
+.service-form input:focus,
+.service-form select:focus,
+.service-form textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+/* Textarea */
+.service-form textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+/* Select options */
+.service-form select option {
+  background: #0f172a;
+  color: white;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.service-form button {
+  padding: 12px;
+  border-radius: 10px;
+
+  border: none;
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #000;
+
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(56, 189, 248, 0.3);
+}
+
+.service-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.4);
+}
+
+.service-form button:active {
+  transform: scale(0.98);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 600px) {
+  .service-page {
+    padding: 100px 15px 40px;
+  }
+
+  .service-text {
+    font-size: 24px;
+  }
+
+  .service-icon {
+    font-size: 30px;
+  }
+
+  .service-form {
+    padding: 20px;
+  }
+}

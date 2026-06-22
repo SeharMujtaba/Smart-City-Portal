@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+}
+
+.home {
+  min-height: 100vh;
+}
+
+.hero {
+  height: 90vh;
+
+  background-image:
+  linear-gradient(
+  rgba(0,0,0,0.5),
+  rgba(0,0,0,0.6)
+  ),
+  url("https://images.unsplash.com/photo-1605640840605-14ac1855827b");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.hero-overlay p {
+  font-size: 1.3rem;
+  max-width: 800px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.primary-btn {
+  background: #0ea5e9;
+  color: white;
+}
+
+.secondary-btn {
+  background: #0ea5e9;
+}
+
+.features {
+  display: grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(280px,1fr));
+
+  gap: 30px;
+
+  padding: 60px;
+}
+
+.glass-card {
+
+  background:
+  rgba(255,255,255,0.1);
+
+  border:
+  1px solid rgba(255,255,255,0.2);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  color: white;
+
+    transition: all 0.3s ease;;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+}

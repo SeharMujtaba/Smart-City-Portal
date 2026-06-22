@@ -1,0 +1,125 @@
+.complaints-page {
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+
+  background: linear-gradient(
+      rgba(15, 23, 42, 0.85),
+      rgba(15, 23, 42, 0.85)
+    ),
+    url("../assets/kashmir-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+/* TITLE */
+.complaints-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #e2e8f0;
+}
+
+/* FORM BOX */
+.complaints-form {
+  max-width: 500px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.complaints-form input {
+  padding: 12px;
+  border-radius: 10px;
+
+  border: none;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.complaints-form input::placeholder {
+  color: #cbd5e1;
+}
+
+.complaints-form button {
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #0ea5e9;
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.complaints-form button:hover {
+  background: #0284c7;
+}
+
+.complaints-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* LIST */
+.complaints-list {
+  max-width: 700px;
+  margin: 30px auto 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* CARD */
+.complaint-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 16px;
+
+  border-radius: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(10px);
+}
+
+.complaint-card h4 {
+  margin-bottom: 5px;
+  color: #f8fafc;
+}
+
+.complaint-card p {
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+.complaint-card b {
+  color: #38bdf8;
+}
+
+/* EMPTY STATE */
+.no-complaints {
+  text-align: center;
+  color: #94a3b8;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
